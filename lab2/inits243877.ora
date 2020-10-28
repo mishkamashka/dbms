@@ -1,0 +1,5 @@
+db_name="fastbird"
+sga_max_size=720M
+db_block_size=8192
+control_files=(/u01/sml28/fastbird/ora_control1, /u01/sml28/fastbird/ora_control2)
+compatible = "11.1.0"
