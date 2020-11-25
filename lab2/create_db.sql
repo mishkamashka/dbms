@@ -22,3 +22,7 @@ CREATE DATABASE fastbird
         '/u01/sml28/fastbird/node01/madwhitenews04.dbf' SIZE 100M;
     CREATE TABLESPACE DARK_GREEN_DISK DATAFILE '/u01/sml28/fastbird/node01/darkgreendisk01.dbf' SIZE 100M,
         '/u01/sml28/fastbird/node03/darkgreendisk02.dbf' SIZE 100M;
+
+ALTER USER system IDENTIFIED BY admin ACCOUNT UNLOCK;
+-- @?/rdbms/admin/catalog.sql
+-- @?/rdbms/admin/catproc.sql
