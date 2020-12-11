@@ -17,9 +17,9 @@ CREATE DATABASE fastbird
     
     CREATE TABLESPACE FAR_BROWN_OVEN DATAFILE '/u01/sml28/fastbird/node02/farbrownoven01.dbf' SIZE 100M;
     CREATE TABLESPACE MAD_WHITE_NEWS DATAFILE '/u01/sml28/fastbird/node04/madwhitenews01.dbf' SIZE 100M,
-        '/u01/sml28/fastbird/node04/madwhitenews02.dbf' SIZE 100M,
-        '/u01/sml28/fastbird/node04/madwhitenews03.dbf' SIZE 100M,
-        '/u01/sml28/fastbird/node01/madwhitenews04.dbf' SIZE 100M;
+        '/u01/sml28/fastbird/node04/madwhitenews02.dbf' SIZE 300M,
+        '/u01/sml28/fastbird/node04/madwhitenews03.dbf' SIZE 300M,
+        '/u01/sml28/fastbird/node01/madwhitenews04.dbf' SIZE 300M;
     CREATE TABLESPACE DARK_GREEN_DISK DATAFILE '/u01/sml28/fastbird/node01/darkgreendisk01.dbf' SIZE 100M,
         '/u01/sml28/fastbird/node03/darkgreendisk02.dbf' SIZE 100M;
 
