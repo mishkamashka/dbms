@@ -1,0 +1,5 @@
+db_name="fastbird"
+db_block_size=8192
+control_files=(/u01/sml28/fastbird/ora_control1, /u01/sml28/fastbird/ora_control2)
+compatible = "11.1.0"
+streams_pool_size=128M

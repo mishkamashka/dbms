@@ -1,0 +1,6 @@
+instance_type=asm
+ASM_POWER_LIMIT=11
+ASM_DISKSTRING='/u01/beautifulalligator','/u01/dangerouscow','/u01/cutedog','/u01/dangerousdeer','/u01/luckytiger'
+_ASM_ALLOW_ONLY_RAW_DISKS=FALSE
+ASM_DISKGROUPS=beautifulalligator,dangerouscow,luckytiger
+remote_login_passwordfile=exclusive
