@@ -6,7 +6,7 @@ ALTER SYSTEM SET asm_diskstring=
 '/u01/interestingscorpion/*',
 '/u01/unluckyoctopus/*';
 
-CREATE DISKGROUP friendlylion EXTERNAL REDUNDANCY DISK
+CREATE DISKGROUP friendlylion NORMAL REDUNDANCY DISK
 '/u01/friendlylion/friendlylion0',
 '/u01/friendlylion/friendlylion1',
 '/u01/friendlylion/friendlylion2',
@@ -16,7 +16,7 @@ CREATE DISKGROUP friendlylion EXTERNAL REDUNDANCY DISK
 ATTRIBUTE 'AU_SIZE'='16M',
 'COMPATIBLE.ASM'='11.2.0.0.0';
 
-CREATE DISKGROUP interestingscorpion EXTERNAL REDUNDANCY DISK
+CREATE DISKGROUP interestingscorpion NORMAL REDUNDANCY DISK
 '/u01/interestingscorpion/interestingscorpion0',
 '/u01/interestingscorpion/interestingscorpion1',
 '/u01/interestingscorpion/interestingscorpion2',
@@ -25,7 +25,7 @@ CREATE DISKGROUP interestingscorpion EXTERNAL REDUNDANCY DISK
 ATTRIBUTE 'AU_SIZE'='2M',
 'COMPATIBLE.ASM'='11.2.0.0.0';
 
-CREATE DISKGROUP unluckyoctopus EXTERNAL REDUNDANCY DISK
+CREATE DISKGROUP unluckyoctopus NORMAL REDUNDANCY DISK
 '/u01/unluckyoctopus/unluckyoctopus0',
 '/u01/unluckyoctopus/unluckyoctopus1',
 '/u01/unluckyoctopus/unluckyoctopus2',

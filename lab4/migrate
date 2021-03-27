@@ -1,0 +1,49 @@
+select name from v$datafile;
+
+NAME
+--------------------------------------------------------------------------------
+/u01/sml28/fastbird/node04/obetu3.dbf
+/u01/sml28/fastbird/node03/awoli15.dbf
+/u01/sml28/fastbird/node04/xav70.dbf
+/u01/sml28/fastbird/node03/zeb42.dbf
+/u01/sml28/fastbird/undo.dbf
+/u01/sml28/fastbird/node01/oziguso598.dbf
+/u01/sml28/fastbird/node01/oyineso925.dbf
+/u01/sml28/fastbird/node02/farbrownoven01.dbf
+/u01/sml28/fastbird/node04/madwhitenews01.dbf
+/u01/sml28/fastbird/node04/madwhitenews02.dbf
+/u01/sml28/fastbird/node04/madwhitenews03.dbf
+/u01/sml28/fastbird/node01/madwhitenews04.dbf
+/u01/sml28/fastbird/node01/darkgreendisk01.dbf
+/u01/sml28/fastbird/node03/darkgreendisk02.dbf
+ 
+select name from v$controlfile;
+
+NAME
+--------------------------------------------------------------------------------
+/u01/sml28/fastbird/ora_control1
+/u01/sml28/fastbird/ora_control2
+ 
+select member from v$logfile
+2 ;
+
+MEMBER
+--------------------------------------------------------------------------------
+/u01/sml28/fastbird/redo01.log
+/u01/sml28/fastbird/redo03.log
+/u01/sml28/fastbird/redo04.log
+
+
+
+???
+Set the CONTROL_FILES parameter in SPfile to the alias names of control files in the directory +DATA/orcl/oradata in DATA diskgroup. We will copy control files there later.
+ORCL>alter system set control_files =
+'+DATA/fastbird/ora_control1',
+'+DATA/fastbird/ora_control2' scope = spfile;
+
+ORCL> shu immediate;
+
+mkdir +DATA/orcl/oradata
+mkdir +DATA/fastbird
+
+mkdir +

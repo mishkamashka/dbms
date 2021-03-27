@@ -1,0 +1,9 @@
+_asm_allow_only_raw_disks=false
+instance_type=asm
+asm_power_limit=1
+asm_diskstring=( 
+	'/u01/carefulfrog/*',
+	'/u01/carefulcow/*',
+	'/u01/fastbird/*',
+)
+remote_login_passwordfile='EXCLUSIVE'

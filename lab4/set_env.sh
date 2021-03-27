@@ -6,4 +6,8 @@ export PATH=${PATH}:${ORACLE_HOME}/bin;
 export ORACLE_SID="s243877";
 export NLS_LANG="AMERICAN_AMERICA.UTF8";
 
+export GRID_HOME="/u01/app/11.2.0/grid";
+export PATH=${PATH}:${GRID_HOME}/bin;
+
+
 export ORACLE_BASE="u01/app/oracle";

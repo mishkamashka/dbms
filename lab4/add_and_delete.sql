@@ -3,7 +3,8 @@ ALTER SYSTEM SET asm_diskstring=
 '/u01/carefulcow/*',
 '/u01/happysnake/*';
 
-DROP DISKGROUP carefulfrog;
+DROP DISKGROUP carefulfrog; 
+-- НЕ УДАЛЕЦЦА
 
 CREATE DISKGROUP happysnake EXTERNAL REDUNDANCY DISK
 '/u01/happysnake/happysnake0',

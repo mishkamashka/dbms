@@ -1,4 +1,4 @@
-CREATE DISKGROUP carefulfrog EXTERNAL REDUNDANCY DISKGROUP
+CREATE DISKGROUP carefulfrog NORMAL REDUNDANCY DISKGROUP
 '/u01/carefulfrog/carefulfrog0',
 '/u01/carefulfrog/carefulfrog1',
 '/u01/carefulfrog/carefulfrog2',
@@ -6,7 +6,7 @@ CREATE DISKGROUP carefulfrog EXTERNAL REDUNDANCY DISKGROUP
 '/u01/carefulfrog/carefulfrog4'
 ATTRIBUTE 'COMPATIBLE.ASM'='11.2.0.0.0';
 
-CREATE DISKGROUP carefulcow EXTERNAL REDUNDANCY DISKGROUP
+CREATE DISKGROUP carefulcow NORMAL REDUNDANCY DISKGROUP
 '/u01/carefulcow/carefulcow0',
 '/u01/carefulcow/carefulcow1',
 '/u01/carefulcow/carefulcow2',
